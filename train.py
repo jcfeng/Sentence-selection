@@ -79,7 +79,7 @@ def trainClues(trainlist,ans1,ans0):
     mrrt=mrrcount(trainlist,ans1,ans0)
     print 'MRR unigram+clues train',mrrt
     w=clf.coef_
-    w=np.append(w,clf.intercept_);
+    w=np.append(w,clf.intercept_)
     return w
 
 def train(LISTPATH,PANS1,PANS0):
